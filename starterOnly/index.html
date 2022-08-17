@@ -60,11 +60,11 @@
               name="reserve"
               action="index.html"
               method="get"
-              onsubmit="return validate();"
+              onsubmit="return validate();" 
               id="subscribe" 
               
             >
-            <!-- rajout id -->
+          
 
 
               <div
@@ -78,7 +78,7 @@
                   minlength="2"
                   placeholder="Exemple : Laurent"
                 /><br>
-                <p class="avertissement">Votre prénom doit contenir 2 lettres minimum</p>
+                <p class="avertissement">Veuillez entrer 2 lettres ou plus pour le champ du prénom</p>
               </div>
               <div
                 class="formData">
@@ -88,9 +88,10 @@
                   type="text"
                   id="last"
                   name="last"
+                  minlength="2"
                   placeholder="Exemple : DUJARDIN"
                 /><br>
-                <p class="avertissement">Veuillez entrer 2 caractère ou plus pour le champ du nom</p>
+                <p class="avertissement">Veuillez entrer 2 lettres ou plus pour le champ du nom</p>
               </div>
               <div
                 class="formData">
@@ -127,6 +128,7 @@
                 max="99"
                 placeholder="2"
                 />
+                <p class="avertissement">Veuillez saisir un chiffre entre 0 et 99.</p>
                 
               </div>
               <p class="text-label">A quel tournoi souhaitez-vous participer cette année ?</p>
@@ -139,6 +141,7 @@
                   name="location"
                   value="New York"
                 />
+                
                 <label class="checkbox-label" for="location1">
                   <span class="checkbox-icon"></span>
                   New York</label
@@ -198,6 +201,7 @@
                   <span class="checkbox-icon"></span>
                   Portland</label
                 >
+                <p class="avertissement">Veuillez selectionner une ville</p>
               </div>
 
               <div
@@ -219,6 +223,7 @@
                   Je Je souhaite être prévenu des prochains évènements.
                 </label>
                 <br>
+                <p class="avertissement">Veuillez acceptez les conditions d'utilisation</p>
               </div>
               <input
                 class="btn-submit"
